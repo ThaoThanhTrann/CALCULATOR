@@ -36,13 +36,14 @@
             this.txtB = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtKetqua = new System.Windows.Forms.TextBox();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btCong
             // 
             this.btCong.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btCong.ForeColor = System.Drawing.Color.Blue;
-            this.btCong.Location = new System.Drawing.Point(584, 363);
+            this.btCong.Location = new System.Drawing.Point(584, 357);
             this.btCong.Name = "btCong";
             this.btCong.Size = new System.Drawing.Size(94, 60);
             this.btCong.TabIndex = 0;
@@ -122,12 +123,25 @@
             this.txtKetqua.Size = new System.Drawing.Size(451, 27);
             this.txtKetqua.TabIndex = 2;
             // 
+            // btTru
+            // 
+            this.btTru.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btTru.ForeColor = System.Drawing.Color.Blue;
+            this.btTru.Location = new System.Drawing.Point(428, 357);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(94, 60);
+            this.btTru.TabIndex = 3;
+            this.btTru.Text = "-";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.txtKetqua);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.label4);
@@ -154,5 +168,6 @@
         private TextBox txtB;
         private Label label4;
         private TextBox txtKetqua;
+        private Button btTru;
     }
 }
